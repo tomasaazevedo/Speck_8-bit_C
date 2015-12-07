@@ -38,7 +38,7 @@ static BOOL equalBlocks(byte first_block[], byte second_block[], const int block
 BOOL speckTest(int ntests) {
   byte key[SPECK_BBYTES], pt[SPECK_BBYTES], ct[SPECK_BBYTES], ct_aux[SPECK_BBYTES];
 
-  //test values
+  //test values for 128-bit block and key sizes
   memcpy(key, "\x2b\x7e\x15\x16\x78\xcf\xa7\xca\xc4\xd7\x57\xe9\x7b\xbd\x2a\x48", SPECK_BBYTES);
   memcpy(pt, "\x02\x05\x05\x09\x54\x6f\x6d\xe1\x73\x20\x41\x2e\x20\x41\x7a\x65", SPECK_BBYTES);
   memcpy(ct_aux, "\x2D\x14\xF7\xE2\x96\x62\xFA\xC8\xD3\x8F\x1B\xBE\x8A\xBF\x5A\x19", SPECK_BBYTES);
